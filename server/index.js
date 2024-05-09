@@ -72,7 +72,8 @@ const parseOCRResult = (text) => {
       person3.name = nameArray[3];
     } else if (
       line.includes("Fathers Name:") ||
-      line.includes("Husbands Name:")
+      line.includes("Husbands Name:") ||
+      line.includes("Mothers Name:")
     ) {
       const fatherHusbandNameArray = line.split(
         /Fathers Name\s*:\s*|Husbands Name\s*:\s*/
