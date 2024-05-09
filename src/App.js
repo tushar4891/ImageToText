@@ -5,7 +5,9 @@ import axios from "axios";
 import { io } from "socket.io-client";
 
 function App() {
-  const socket = io("http://localhost:8000");
+  //   const socket = io("http://localhost:8000");
+  const socket = io("https://imagetotext-moen.onrender.com");
+
   const [file, setFile] = useState("");
   const [candidates, setCandidates] = useState([]);
   const [uploadProgress, setUploadProgress] = useState(0);
